@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 //given a array where all elements appear even number of times except one element ouccurs
 //odd number of time find that element
-public class Q3_find_odd_count_elements {
+public class Q03_find_odd_count_elements {
       public static void find_count_1(int[] arr){
             HashMap<Integer, Integer> freq_map = new HashMap<> ();
             for(int num : arr){

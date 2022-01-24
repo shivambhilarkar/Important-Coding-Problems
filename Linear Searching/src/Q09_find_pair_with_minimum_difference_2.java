@@ -4,7 +4,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Q9_find_pair_with_minimum_difference_2 {
+public class Q09_find_pair_with_minimum_difference_2 {
       public static void find_pair_1(int[] arr1, int[] arr2){
 
             Arrays.sort(arr1);

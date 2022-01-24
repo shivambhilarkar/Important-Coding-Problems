@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 //you have given array find out pair who has difference equal to given value
-public class Q7_find_pair_with_given_difference {
+public class Q07_find_pair_with_given_difference {
       public static void find_pair1(int[] arr , int value){
 
             Arrays.sort(arr);

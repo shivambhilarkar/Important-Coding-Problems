@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 //find min max from array & find missing values from min-max;
-public class Q2_find_missing_in_range_minmax {
+public class Q02_find_missing_in_range_minmax {
 
       public static void find_missing(int[] arr){
             int min = Integer.MAX_VALUE;

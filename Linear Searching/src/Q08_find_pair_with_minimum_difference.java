@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 //you have given an array find out pair with min difference
-public class Q8_find_pair_with_minimum_difference {
+public class Q08_find_pair_with_minimum_difference {
       public static void find_pair(int[] arr){
             int size = arr.length;
             int a = -1, b = -1;

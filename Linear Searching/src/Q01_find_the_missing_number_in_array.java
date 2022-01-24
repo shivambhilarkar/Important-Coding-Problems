@@ -1,7 +1,7 @@
 import java.util.HashSet;
 import java.util.Scanner;
 //given number 1 - n find missing number from them
-public class Q1_find_the_missing_number_in_array {
+public class Q01_find_the_missing_number_in_array {
       public static void find_missing_1(int[] arr){
             HashSet<Integer> set = new HashSet<> ();
             for(int num : arr){

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 //given two array a & b
 //find out pair from both array which from sum == value;
-public class Q6_find_pair_in_array2 {
+public class Q06_find_pair_in_array2 {
       public static void find_pair1(int[] arr1, int[] arr2, int value){
 
             Arrays.sort(arr1);

@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 //find two elements such that there sum is equal to value
-public class Q5_find_pair_in_array {
+public class Q05_find_pair_in_array {
 
 //      for single pair
       public static void find_pair1(int[] arr,int value){

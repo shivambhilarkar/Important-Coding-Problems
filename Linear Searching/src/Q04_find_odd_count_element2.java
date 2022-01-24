@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 //given a array where all elements appear even number of time except two numbers appear
 //odd number of time find that number;
-public class Q4_find_odd_count_element2 {
+public class Q04_find_odd_count_element2 {
       public static void find_number(int[] arr){
             int xorsum = 0;
             for(int num : arr){
