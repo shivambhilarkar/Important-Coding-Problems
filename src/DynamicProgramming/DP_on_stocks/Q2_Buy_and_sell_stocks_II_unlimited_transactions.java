@@ -2,7 +2,7 @@ package DynamicProgramming.DP_on_stocks;
 
 import java.util.Arrays;
 
-public class Q2_Buy_and_sell_II {
+public class Q2_Buy_and_sell_stocks_II_unlimited_transactions {
 
     /**
      * 0 -> buy

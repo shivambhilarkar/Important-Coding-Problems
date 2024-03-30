@@ -1,6 +1,6 @@
 package DynamicProgramming.DP_on_stocks;
 
-public class Q1_Buy_and_sell_I {
+public class Q1_Buy_and_sell_stocks_I_single_transaction {
 
 
     public static int getMaximumProfit(int[] stocks){
