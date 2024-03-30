@@ -2,6 +2,8 @@ package Trees;// Given the root of a binary search tree, rearrange the tree in i
 // the leftmost node in the tree is now the root of the tree,
 //  and every node has no left child and only one right child.
 
+import java.util.ArrayList;
+
 public class increasing_order_search_tree {
     public class TreeNode {
         int val;
