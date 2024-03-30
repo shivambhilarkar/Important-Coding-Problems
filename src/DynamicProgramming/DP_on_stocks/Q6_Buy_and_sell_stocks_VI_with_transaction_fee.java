@@ -59,6 +59,31 @@ public class Q6_Buy_and_sell_stocks_VI_with_transaction_fee {
         return profit;
     }
 
+    /**
+     * Tabulation
+     */
+    public int getMaxProfitTabulation(int[] prices, int fee) {
+
+        int[][] dp = new int[prices.length + 1][2];
+        for (int index = prices.length - 1; index >= 0; index--) {
+            for (int isBuy = 0; isBuy < 2; isBuy++) {
+                int profit = 0;
+                if (isBuy == 0) {
+                    int canBuyNow = -prices[index] + (-fee) + dp[index + 1][1];
+                    int dontBuyNow = dp[index + 1][0];
+                    profit = Math.max(canBuyNow, dontBuyNow);
+                } else {
+                    int canSellNow = prices[index] + dp[index + 1][0];
+                    int dontSellNow = dp[index + 1][1];
+                    profit = Math.max(canSellNow, dontSellNow);
+                }
+                dp[index][isBuy] = profit;
+            }
+        }
+        return dp[0][0];
+    }
+
+
     public static void main(String[] args) {
 
     }
