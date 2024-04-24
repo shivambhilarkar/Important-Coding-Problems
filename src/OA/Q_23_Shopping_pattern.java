@@ -5,6 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+//https://leetcode.com/problems/minimum-degree-of-a-connected-trio-in-a-graph/description/
 //note : list<list<int>> adj does time limit exceed
 public class Q_23_Shopping_pattern {
 
