@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 //https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/description/
-public class Q_24_Music_Pairs {
+public class Q_25_Music_Pairs {
 
     public int numPairsDivisibleBy60(int[] time) {
         if (time == null || time.length == 0) {
