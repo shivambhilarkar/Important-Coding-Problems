@@ -2,7 +2,7 @@ package BFS;
 
 import java.util.*;
 
-public class Q3_Word_Ladder {
+public class Q03_Word_Ladder {
 
     public int getLadderLength(String beginWord, String endWord, List<String> wordList) {
         if (beginWord.equals(endWord)) return 0;

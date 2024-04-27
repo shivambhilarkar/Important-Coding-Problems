@@ -1,6 +1,6 @@
 package DynamicProgramming.DP_on_trees;
 
-public class Q1_Maximum_sum_path_any_node_to_node {
+public class Q2_Maximum_sum_path_any_node_to_node {
 
 
     static int result = Integer.MIN_VALUE;
