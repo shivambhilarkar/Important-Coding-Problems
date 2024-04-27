@@ -1,5 +1,7 @@
 package DynamicProgramming.DP_on_stocks;
 
+
+//Kadan's Algorithm
 public class Q1_Buy_and_sell_stocks_I_single_transaction {
 
 
