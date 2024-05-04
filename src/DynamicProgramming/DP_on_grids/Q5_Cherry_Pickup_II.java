@@ -3,7 +3,7 @@ package DynamicProgramming.DP_on_grids;
 import java.util.Arrays;
 
 //https://leetcode.com/problems/cherry-pickup-ii/description/
-public class Q4_Cherry_Pickup_II {
+public class Q5_Cherry_Pickup_II {
 
 
     public int recursive(int i, int j1, int j2, int[][] grid) {
