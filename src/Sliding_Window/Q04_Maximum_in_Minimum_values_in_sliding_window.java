@@ -14,7 +14,7 @@ public class Q04_Maximum_in_Minimum_values_in_sliding_window {
                   int curr = arr[i];
 //                  remove out of range element
                   if(queue.size() > 0 && queue.peek() <= i-window_size){
-                        queue.remove();
+                        queue.removeFirst();
                   }
 //                  remove greter element at left
                   while(queue.size() > 0 && arr[queue.peekLast()] >= curr){
@@ -22,7 +22,7 @@ public class Q04_Maximum_in_Minimum_values_in_sliding_window {
                   }
                   queue.add(i);
                   if(i >= window_size-1){
-                        int min = arr[queue.peek()];
+                        int min = arr[queue.peekFirst()];
                         mins.add(min);
                         maximum = Math.max(min, maximum);
                   }

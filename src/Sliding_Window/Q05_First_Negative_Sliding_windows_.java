@@ -9,7 +9,7 @@ public class Q05_First_Negative_Sliding_windows_{
 
             for(int i = 0; i < arr.length; i++){
                   if(queue.size () > 0 && queue.peek() <= i-window_size){
-                        queue.remove();
+                        queue.removeFirst();
                   }
                   if(arr[i] < 0){
                         queue.add(i);
@@ -17,7 +17,7 @@ public class Q05_First_Negative_Sliding_windows_{
 //                  window of size k
                   if(i >= window_size-1){
                         if(queue.size() > 0){
-                              System.out.print(arr[queue.peek()] + " ");
+                              System.out.print(arr[queue.peekFirst()] + " ");
                         }else{
                               System.out.print("NAN" + " ");
                         }

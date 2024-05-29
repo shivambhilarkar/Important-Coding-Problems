@@ -14,7 +14,7 @@ public class Q03_Minimum_in_Maximum_values_in_sliding_window_ {
                   int curr = arr[i];
 //                  remove out of range element
                   if(queue.size() > 0 && queue.peek() <= i-window_size){
-                        queue.remove();
+                        queue.removeFirst();
                   }
 //                  remove smaller element from left
                   while(queue.size() > 0 && arr[queue.peekLast()] <= curr){
@@ -22,7 +22,7 @@ public class Q03_Minimum_in_Maximum_values_in_sliding_window_ {
                   }
                   queue.add(i);
                   if(i >= window_size-1){
-                        int max = arr[queue.peek()];
+                        int max = arr[queue.peekFirst()];
                         maxes.add(max);
                         minimum = Math.min(max, minimum);
                   }

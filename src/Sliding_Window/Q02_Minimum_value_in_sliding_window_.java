@@ -15,7 +15,7 @@ public class Q02_Minimum_value_in_sliding_window_ {
                   int curr = arr[i];
 //                  remove out of range element
                   if(queue.size() > 0 && queue.peek() <= i-window_size){
-                        queue.remove();
+                        queue.removeFirst();
                   }
 //                  remove larger element from left
                   while(queue.size() > 0 && arr[queue.peekLast()] >= curr){
@@ -24,7 +24,7 @@ public class Q02_Minimum_value_in_sliding_window_ {
                   queue.add(i);
                   if(i >= window_size-1){
 //                        min element at front of queue
-                        mins.add(arr[queue.peek()]);
+                        mins.add(arr[queue.peekFirst()]);
                   }
             }
             System.out.println("Mins : "+ mins);

@@ -13,7 +13,7 @@ public class Q01_Maximum_value_in_sliding_window_ {
             for(int i = 0; i < arr.length; i++){
 //                  remove out of range elements
                   if(queue.size() > 0 && queue.peek() <= i-window_size){
-                        queue.remove();
+                        queue.removeFirst();
                   }
 //                  remove smaller values at left
                   while(queue.size() > 0 && arr[queue.peekLast()] <= arr[i]){
@@ -22,7 +22,7 @@ public class Q01_Maximum_value_in_sliding_window_ {
                   queue.add(i);
                   if(i >= window_size-1){
 //                        maximum value present at front of queue.
-                        maxes.add(arr[queue.peek()]);
+                        maxes.add(arr[queue.peekFirst()]);
                   }
             }
             System.out.println("Maxes : "+maxes);
