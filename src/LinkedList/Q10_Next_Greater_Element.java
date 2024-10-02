@@ -29,6 +29,7 @@ public class Q10_Next_Greater_Element {
                 lst.add(head.val);
                 head = head.next;
             }
+
             int[] array = new int[lst.size()];
             Stack<Integer> stack = new Stack<>();
             // Monotonic stack algo -> next greate element

@@ -35,7 +35,7 @@ public class Q03_Search_in_rotated_sorted_array {
                         right = mid - 1;
                     }
                 } else {// left half is sorted
-                    if (nums[left] <= target && nums[mid] > target) { // target within left half
+                    if (nums[left] <= target && target < nums[mid]) { // target within left half
                         right = mid - 1;
                     } else {
                         left = mid + 1;

@@ -47,7 +47,7 @@ public class Q1_Binary_Search_Algo {
             Scanner scan = new Scanner(System.in);
 
             int[] arr = {1,2,3,4,5,6,7,8,9,10};
-            Binary_Search_Iterative (arr, 5);
-            Binary_Search_Recursive (arr, 15,0, arr.length-1);
+            Binary_Search_Iterative (arr, 2);
+//            Binary_Search_Recursive (arr, 15,0, arr.length-1);
       }
 }
