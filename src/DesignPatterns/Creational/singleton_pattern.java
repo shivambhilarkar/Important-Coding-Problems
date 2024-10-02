@@ -1,5 +1,9 @@
 package DesignPatterns.Creational;
 //https://refactoring.guru/design-patterns/singleton/java/example#example-0
+/*
+1. Why to declare class as final ?
+2. volatile ?
+ */
 
 //Naive Solution
 final class Singleton{
