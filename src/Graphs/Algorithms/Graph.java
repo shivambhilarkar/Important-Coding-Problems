@@ -14,8 +14,8 @@ public class Graph {
             }
       }
 
-      static ArrayList<ArrayList<Edge>> adj;
-      static int size;
+       ArrayList<ArrayList<Edge>> adj;
+       int size;
       Graph(int nodes){
             this.size = nodes;
             adj = new ArrayList<> ();
@@ -24,15 +24,15 @@ public class Graph {
             }
       }
 
-      public static void add_directed_edge(int src, int dest , int cost){
+      public void add_directed_edge(int src, int dest , int cost){
             Edge edge = new Edge (src, dest, cost);
             adj.get(src).add(edge);
       }
-      public static void add_undirected_edge(int src, int dest, int cost){
+      public void add_undirected_edge(int src, int dest, int cost){
             add_directed_edge (src, dest, cost);
             add_directed_edge (dest, src, cost);
       }
-      public static void display_graph(){
+      public void display_graph(){
             int nodes = size;
             for(int i = 0; i < nodes; i++){
                   System.out.print("source "+i + " -> ");
