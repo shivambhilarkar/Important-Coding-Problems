@@ -25,10 +25,10 @@ public class Prims_Algorithm {
             PriorityQueue<Pair> queue = new PriorityQueue<>();
             queue.add(new Pair(src, -1, 0)); //current node
 
-            while(queue.isEmpty() == false){
+            while(!queue.isEmpty()){
                   Pair removed = queue.remove();
 
-                  if(visited[removed.child] == true){
+                  if(visited[removed.child]){
                         continue;
                   }
                   visited[removed.child] = true;
@@ -37,7 +37,7 @@ public class Prims_Algorithm {
                         System.out.println(removed.child +" -> "+ removed.parent + " -@- "+removed.weight);
                   }
                   for(Graph.Edge edge : graph.adj.get(removed.child)){
-                        if(visited[edge.dest] == false){
+                        if(!visited[edge.dest]){
                               queue.add(new Pair(edge.dest , removed.child, edge.cost));
                         }
                   }
