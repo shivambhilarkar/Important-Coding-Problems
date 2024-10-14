@@ -27,7 +27,9 @@ public class Q9_Cheapest_Flights_With_K_Stops {
 
         private int dijkstra(List<Pair<Integer, Integer>>[] graph, int src, int dst, int k) {
             int[][] dist = new int[graph.length][k + 2];
-            Arrays.stream(dist).forEach(A -> Arrays.fill(A, Integer.MAX_VALUE));
+            for(int[] row : dist){
+                Arrays.fill(row, Integer.MAX_VALUE);
+            }
             // (d, u, stops)
             Queue<int[]> minHeap = new PriorityQueue<>((a, b) -> a[0] - b[0]);
 

@@ -2,6 +2,8 @@ package Stack;
 
 import java.util.Stack;
 
+
+//https://leetcode.com/problems/largest-rectangle-in-histogram/description/
 public class Q12_Largest_Rectangle_in_histogram {
 
     public int largestRectangle(int[] input){

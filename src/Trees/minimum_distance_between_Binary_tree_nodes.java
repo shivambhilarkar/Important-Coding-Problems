@@ -33,6 +33,8 @@ public class minimum_distance_between_Binary_tree_nodes {
             if (list.size() < 2) {
                 return 0;
             } else {
+
+                //make get_nodes as inorder_traversal don't need to sort list.
                 Collections.sort(list);
                 int min = Integer.MAX_VALUE;
                 for (int i = 0; i < list.size() - 1; i++) {

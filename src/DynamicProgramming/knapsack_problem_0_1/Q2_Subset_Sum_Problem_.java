@@ -2,7 +2,7 @@ package DynamicProgramming.knapsack_problem_0_1;
 
 import java.util.Scanner;
 
-//iven a set of non-negative integers, and a value sum,
+//Given a set of non-negative integers, and a value sum,
 // determine if there is a subset of the given set with sum equal to given sum.
 public class Q2_Subset_Sum_Problem_ {
       public static boolean recursive_methode(int[] arr, int sum, int n){
@@ -34,12 +34,11 @@ public class Q2_Subset_Sum_Problem_ {
                   //included or excluded current item
                   dp[n][sum] = ( memoization_methode (dp, arr, sum - arr[n-1], n-1) ||
                                 memoization_methode (dp, arr, sum, n-1) );
-                  return dp[n][sum];
             }else{
                   //current item excluded
                   dp[n][sum] = memoization_methode (dp, arr, sum, n-1);
-                  return dp[n][sum];
             }
+          return dp[n][sum];
       }
       public static boolean top_down_methode(int[] arr, int sum){
             int n = arr.length;

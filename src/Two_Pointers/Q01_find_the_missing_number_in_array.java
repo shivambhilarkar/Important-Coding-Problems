@@ -36,8 +36,6 @@ public class Q01_find_the_missing_number_in_array {
             int[] arr = {1,2,3,5,6,7,8};
             find_missing_1 (arr);
             find_missing_2 (arr , 8);
-
-
       }
 
 }
